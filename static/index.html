@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+</head>
+
+<body>
+<h1>Upload File</h1>
+	<form action="/upload"
+	enctype="multipart/form-data" method="post">
+	<p>
+		Please select a file:<br>
+		<input type="file" name="file" size="40">
+	</p>
+	<div>
+		<input type="submit" value="Upload">
+	</div>
+	</form>
+
+	<br />
+
+	<h1>List Files</h1>
+	<form action="/list" enctype="multipart/form-data" method="get">
+	<div>
+		<input type="submit" value="List Files">
+	</div>
+	</form>
+
+	<br />
+
+	<h1>Delete File</h1>
+    <form action="/delete" method="post" enctype="multipart/form-data">
+      <p>Filename: <input type="text" name="filename"></p>
+       <p>File Version: <input type="text" name="fileversion"></p>
+        <p> <input type="submit" value="Delete"> </p>
+    </form>
+
+    <br/>
+
+	<h1>Download File</h1>
+    <form action="/download" method="post" enctype="multipart/form-data">
+      <p>Filename: <input type="text" name="filename"></p>
+       <p>File Version: <input type="text" name="fileversion"></p>
+        <p> <input type="submit" value="Download"> </p>
+    </form>
+
+</body>
+</html>

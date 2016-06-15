@@ -1,0 +1,4 @@
+---
+applications:
+- name: Assign1
+  memory: 128M

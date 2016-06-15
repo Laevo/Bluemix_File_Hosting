@@ -1,0 +1,3 @@
+Flask==0.10.1
+Cloudant==2.0.0a1
+flask_table==0.2.8
